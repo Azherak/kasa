@@ -1,0 +1,19 @@
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px;
+  }
+  
+ul {
+    list-style: none; 
+    display: flex;
+  }
+
+  li {
+    margin: 0 10px;
+
+  }
+  
+  header {
+    padding: 38px 100px;
+  }
