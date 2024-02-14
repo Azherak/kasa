@@ -1,0 +1,17 @@
+.square{
+    background-color: #FF6060;
+    color: white;
+    width: 340px;
+    height: 340px;
+    margin: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+.square h3{
+    font-size: 17px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 50%;
+    text-align: left;
+}
