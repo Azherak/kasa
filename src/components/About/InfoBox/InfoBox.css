@@ -1,0 +1,22 @@
+.chevron {
+    width: 24px;
+    height: 16px;
+  }
+
+.box-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #FF6060;
+    color: white;
+    margin: 20px 180px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.explanation{
+    background-color: white;
+    color: black;
+    margin: 20px 180px;
+
+}
