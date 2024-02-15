@@ -8,8 +8,8 @@ function InfoBox({ word, explanation }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div class="box">
-      <div class="box-content" onClick={() => setIsOpen(!isOpen)}>
+    <div className="box">
+      <div className="box-content" onClick={() => setIsOpen(!isOpen)}>
         {word}
         <img
           src={Chevron}
@@ -21,7 +21,7 @@ function InfoBox({ word, explanation }) {
           }}
         />
       </div>
-      {isOpen && <div class="explanation">{explanation}</div>}
+      {isOpen && <div className="explanation">{explanation}</div>}
     </div>
   );
 }

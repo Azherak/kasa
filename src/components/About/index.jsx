@@ -6,7 +6,7 @@ import InfoBox from "./InfoBox";
 function About(){
     return(
         <div>
-            <div class="about-visuel">
+            <div className="about-visuel">
                 <img src={img} alt="montagnes et lac"></img>
             </div>
             <div>
