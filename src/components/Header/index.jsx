@@ -10,10 +10,10 @@ function Header(){
                 <img src={logo} alt="logo du site"></img>
                 <ul>
                     <li>
-                        <Link to="/">Accueil</Link>
+                        <Link to="/" className="liens-header">Accueil</Link>
                     </li>
                     <li>
-                        <Link to="/About">A propos</Link>
+                        <Link to="/About" className="liens-header">A propos</Link>
                     </li>
                 </ul>
             </nav>
