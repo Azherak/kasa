@@ -43,12 +43,12 @@
 
 .description-equipements {
     display: flex;
-    gap: 80px;
+    gap: 2em;
 }
 
 .description-equipements .box-content{
     align-items: center;
-    width: 18em;
+    width: 25em;
     margin: 0;
 
 }
