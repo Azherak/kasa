@@ -6,7 +6,7 @@ import "./Container.css";
 function Conteneur(){
     return(
         <div className="container">
-        {data.slice(0, 6).map((item, index) => (
+        {data.map((item, index) => (
           <Square key={index} item={item} />
         ))}
       </div>
