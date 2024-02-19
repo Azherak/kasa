@@ -5,14 +5,16 @@ import ImageCarousel from "./Carousel/index.jsx";
 
 function Logements(){
     const {id} = useParams();
-    const logement = data.find(item => item.id === Number(id));
+    console.log(id);
+    const logement = data.find(item => item.id === id);
     if (!logement) {
-        return null; 
+        return <div>Logement non trouvé</div>; 
     } 
+    console.log(id)
     return(
         <div>
             <div>
-                <ImageCarousel images={logement.pictures}/> 
+                <ImageCarousel pictures={logement.pictures}/> 
             </div>
             <div>
                 <div>

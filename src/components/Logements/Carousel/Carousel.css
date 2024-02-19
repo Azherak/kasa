@@ -1,0 +1,23 @@
+.carousel-img {
+    position: relative; 
+    width: 100%;
+   }
+
+.carousel .slide {
+       width: 10%;
+       pointer-events:initial;
+       position: absolute;
+       min-width: 10%;
+}
+   
+.slide-back {
+       top: 50%;
+       left: 10px;
+       z-index: 1;
+}
+   
+.slide-forward {
+       top: 50%;
+       right: 10px;
+};
+   
