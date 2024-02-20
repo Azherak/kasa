@@ -27,11 +27,11 @@ function Logements(){
                 </div>
             </div>
             <div className='rating-conteneur'>
-                <div className='conteneur-box'>
-                    <div className='box-info'>{logement.tags[0]}</div>
-                    <div className='box-info'>{logement.tags[1]}</div>
-                    <div className='box-info'>{logement.tags[2]}</div>
-                </div>
+                    <div className='conteneur-box'>
+                        {logement.tags.map((tag, index) => (
+                            <div key={index} className='box-info'>{tag}</div>
+                        ))}
+                    </div>
                 <Rating rating={logement.rating}/>
             </div>
             <div className='description-equipements'>
