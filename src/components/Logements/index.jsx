@@ -3,6 +3,7 @@ import InfoBox from "../About/InfoBox/index";
 import data from "../../data.json"; 
 import ImageCarousel from "./Carousel/index.jsx";
 import "./Logements.css";
+import Rating from './Rating/index.jsx';
 
 function Logements(){
     const {id} = useParams();
@@ -31,7 +32,7 @@ function Logements(){
                     <div className='box-info'>{logement.tags[1]}</div>
                     <div className='box-info'>{logement.tags[2]}</div>
                 </div>
-                <div>rating</div>
+                <Rating rating={logement.rating}/>
             </div>
             <div className='description-equipements'>
                 <InfoBox word="Description" explanation={logement.description}/>
