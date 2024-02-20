@@ -5,7 +5,6 @@ import "../../../data.json";
 import "./Rating.css";
 
 function Rating({ rating }){
-    console.log(rating);
     let stars = [];
     let ratingNumber = Number(rating);
     for(let i = 0; i < 5; i++){
