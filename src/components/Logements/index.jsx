@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import InfoBox from "../About/InfoBox/index";
 import data from "../../data.json"; 
 import ImageCarousel from "./Carousel/index.jsx";
-import "./Logements.css";
+import "../../style/index.css";
 import Rating from './Rating/index.jsx';
 
 function Logements(){

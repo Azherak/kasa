@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../assets/AboutFond.png";
-import "./About.css";
+import "../../style/index.css";
 import InfoBox from "./InfoBox";
 
 function About(){

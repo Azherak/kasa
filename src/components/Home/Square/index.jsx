@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../data.json";
-import "./Square.css";
+import "../../../style/index.css";
 import { Link } from "react-router-dom";
 
 function Square(props) {

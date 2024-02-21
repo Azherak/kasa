@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import "../../../data.json";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import iconBack from "../../../assets/arrow_back.png";
 import iconForward from "../../../assets/arrow_forward.png";
-import "./Carousel.css";
+import "../../../style/index.css";
 
 function ImageCarousel({ pictures }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -20,9 +19,9 @@ function ImageCarousel({ pictures }) {
 
   return (
     <div className='carousel'>
-      <img className="slide slide-back" src={iconBack}  onClick={prevSlide} alt='icone retour slide'/>
+      <img className="slide-back" src={iconBack}  onClick={prevSlide} alt='icone retour slide'/>
       <img className='carousel-img' src={pictures[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
-      <img className="slide slide-forward" src={iconForward} onClick={nextSlide} alt='icone slide suivant'/>
+      <img className="slide-forward" src={iconForward} onClick={nextSlide} alt='icone slide suivant'/>
     </div>
   );
 }

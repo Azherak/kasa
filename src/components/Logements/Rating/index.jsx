@@ -2,7 +2,7 @@ import React from "react";
 import star from "../../../assets/star.png";
 import starRed from "../../../assets/starRed.png";
 import "../../../data.json";
-import "./Rating.css";
+import "../../../style/index.css";
 
 function Rating({ rating }){
     let stars = [];

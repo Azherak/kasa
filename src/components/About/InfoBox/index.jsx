@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./InfoBox.css";
+import "../../../style/index.css";
 
 // L'image du chevron
 import Chevron from "../../../assets/Vector.png";
