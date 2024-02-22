@@ -1,19 +1,16 @@
 body {
   margin: 0;
-  font-family: 'Montserrat',
-    sans-serif;
- font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
 }
 
 /* About */
-
 .about-visuel {
   height: 223px;
   overflow: hidden;
   margin: 20px 100px;
 }
-
-.about-visuel img{
+.about-visuel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -23,13 +20,12 @@ body {
 }
 
 /* infoBox */
-
 .chevron {
   width: 24px;
   height: 16px;
 }
 
-.box-content{
+.box-content {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -40,15 +36,14 @@ body {
   border-radius: 10px;
 }
 
-.explanation{
+.explanation {
   background-color: white;
   color: black;
   margin: 20px 180px;
 }
 
 /* Error */
-
-.conteneur-error{
+.conteneur-error {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -67,7 +62,6 @@ body {
 }
 
 /* Footer */
-
 footer {
   background-color: black;
   color: white;
@@ -80,15 +74,14 @@ footer {
 }
 
 /* Header */
-
 nav {
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
   display: flex;
 }
 
@@ -104,7 +97,6 @@ a.active {
   text-decoration: underline;
 }
 
-
 .liens-header:focus {
   color: black;
   text-decoration: underline;
@@ -115,7 +107,6 @@ header {
 }
 
 /* Home */
-
 .Home-titre {
   height: 223px;
   overflow: hidden;
@@ -139,7 +130,6 @@ header {
 }
 
 /* Container */
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -149,8 +139,7 @@ header {
 }
 
 /* Square */
-
-.square{
+.square {
   background-color: #FF6060;
   width: 25vw;
   height: 25vw;
@@ -158,7 +147,7 @@ header {
   border-radius: 15px;
   position: relative;
 }
-.square h3{
+.square h3 {
   font-size: 17px;
   position: absolute;
   bottom: 0;
@@ -170,12 +159,17 @@ header {
 }
 
 /* Logements */
-
-.logements{
-  margin:0 9em;
+.logements {
+  margin: 0 9em;
+}
+.logements h2 {
+  color: #FF6060;
 }
 
-.logements h2 , .hotes p{
+.hotes {
+  display: flex;
+}
+.hotes p {
   color: #FF6060;
 }
 
@@ -184,15 +178,10 @@ header {
   justify-content: space-between;
   margin-top: 2em;
 }
-
 .titre-hotes img {
   border-radius: 50%;
   width: 3em;
   height: 3em;
-}
-
-.hotes {
-  display: flex;
 }
 
 .conteneur-box {
@@ -217,8 +206,7 @@ header {
   justify-content: space-between;
   gap: 2em;
 }
-
-.description-equipements .box-content{
+.description-equipements .box-content {
   align-items: center;
   width: 25em;
   max-width: 100%;
@@ -226,19 +214,18 @@ header {
 }
 
 /* Carousel */
-
 .carousel {
   width: 80em;
 }
 
 .carousel-img {
-  position: relative; 
+  position: relative;
   border-radius: 15px;
   height: 25em;
   width: 58em;
- }
+}
 
- .slide-back {
+.slide-back {
   position: absolute;
   top: 18em;
   left: 11em;
@@ -251,8 +238,10 @@ header {
   right: 12em;
   z-index: 1;
 }
-/* Rating */
 
+/* Rating */
 .star {
   width: 1.5em;
 }
+
+/*# sourceMappingURL=index.css.map */
