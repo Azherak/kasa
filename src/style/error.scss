@@ -1,0 +1,23 @@
+@import 'variable.scss';
+
+/* Error */
+
+.conteneur-error {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px;
+}
+.image-error {
+	img {
+		width: 400px;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.titre-error {
+	h2 {
+		color: $color_3;
+	}
+}

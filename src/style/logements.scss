@@ -1,0 +1,81 @@
+@import 'variable.scss';
+
+/* Logements */
+
+.logements {
+	margin: 0 9em;
+	h2 {
+		color: $color_3;
+	}
+}
+.hotes {
+	p {
+		color: $color_3;
+	}
+	display: flex;
+}
+.titre-hotes {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2em;
+	img {
+		border-radius: 50%;
+		width: 3em;
+		height: 3em;
+	}
+}
+.conteneur-box {
+	display: flex;
+}
+.box-info {
+	background-color: $background-color_1;
+	color: $color_1;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 10px;
+}
+.rating-conteneur {
+	display: flex;
+	justify-content: space-between;
+}
+.description-equipements {
+	display: flex;
+	justify-content: space-between;
+	gap: 2em;
+	.box-content {
+		align-items: center;
+		width: 25em;
+		max-width: 100%;
+		margin: 0;
+	}
+}
+
+/* Carousel */
+
+.carousel {
+	width: 80em;
+}
+.carousel-img {
+	position: relative;
+	border-radius: 15px;
+	height: 25em;
+	width: 58em;
+}
+.slide-back {
+	position: absolute;
+	top: 18em;
+	left: 11em;
+	z-index: 1;
+}
+.slide-forward {
+	position: absolute;
+	top: 18em;
+	right: 12em;
+	z-index: 1;
+}
+
+/* Rating */
+
+.star {
+	width: 1.5em;
+}
