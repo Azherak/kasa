@@ -140,12 +140,14 @@ header {
 
 /* Square */
 .square {
-  background-color: #FF6060;
   width: 25vw;
   height: 25vw;
   margin: 2.2vw;
   border-radius: 15px;
+  background: linear-gradient(180deg, black 0%, black 42%, black 99.99%, black 100%);
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .square h3 {
   font-size: 17px;

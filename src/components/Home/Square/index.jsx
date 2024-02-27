@@ -3,12 +3,14 @@ import "../../../data.json";
 import "../../../style/index.css";
 import { Link } from "react-router-dom";
 
-function Square(props) {
-    return (
-      <div className="square">
-        <Link to={`/Logements/${props.item.id}`}><h3>{props.item.title}</h3></Link>
-      </div>
-    );
-  }
+const Square = ({ item }) => {
+  return (
+    <div className="square" style={{ backgroundImage: `url(${item.cover})` }}>
+      <Link to={`/Logements/${item.id}`}>
+        <h3>{item.title}</h3>
+      </Link>
+    </div>
+  );
+};
 
 export default Square;
