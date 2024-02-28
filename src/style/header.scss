@@ -21,6 +21,7 @@ a.active {
 	text-decoration: underline;
 }
 .liens-header {
+	color: $color_2;
 	&:focus {
 		color: $color_2;
 		text-decoration: underline;

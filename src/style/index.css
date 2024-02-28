@@ -97,6 +97,9 @@ a.active {
   text-decoration: underline;
 }
 
+.liens-header {
+  color: black;
+}
 .liens-header:focus {
   color: black;
   text-decoration: underline;
@@ -125,7 +128,7 @@ header {
   color: white;
   position: absolute;
   top: 25%;
-  left: 27.5%;
+  left: 30%;
   font-size: 48px;
 }
 
@@ -164,7 +167,7 @@ header {
   position: absolute;
   z-index: 2;
   bottom: 0;
-  left: 10px;
+  left: 20px;
   width: 50%;
   text-align: left;
   color: white;
@@ -174,6 +177,7 @@ header {
 /* Logements */
 .logements {
   margin: 0 9em;
+  width: 60em;
 }
 .logements h2 {
   color: #FF6060;
@@ -227,28 +231,25 @@ header {
 }
 
 /* Carousel */
-.carousel {
-  width: 80em;
-}
-
 .carousel-img {
   position: relative;
   border-radius: 15px;
   height: 25em;
-  width: 58em;
+  width: 60em;
+  object-fit: cover;
 }
 
 .slide-back {
-  position: absolute;
-  top: 18em;
-  left: 11em;
+  position: relative;
+  top: 26rem;
+  left: 3rem;
   z-index: 1;
 }
 
 .slide-forward {
-  position: absolute;
-  top: 18em;
-  right: 12em;
+  position: relative;
+  top: -19.85rem;
+  right: -82rem;
   z-index: 1;
 }
 
