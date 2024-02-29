@@ -106,14 +106,14 @@ a.active {
 }
 
 header {
-  padding: 38px 100px;
+  padding: 38px 50px;
 }
 
 /* Home */
 .Home-titre {
   height: 223px;
   overflow: hidden;
-  margin: 20px 100px;
+  margin: 20px 50px;
   position: relative;
 }
 .Home-titre img {
@@ -128,15 +128,14 @@ header {
   color: white;
   position: absolute;
   top: 25%;
-  left: 30%;
-  font-size: 48px;
+  left: 25%;
 }
 
 /* Container */
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 100px;
+  margin: 20px 50px;
   background-color: #F6F6F6;
   border-radius: 15px;
 }
@@ -145,7 +144,7 @@ header {
 .square {
   width: 25vw;
   height: 25vw;
-  margin: 2.2vw;
+  margin: 3vw;
   border-radius: 15px;
   position: relative;
   background-size: cover;
@@ -163,7 +162,7 @@ header {
   border-radius: 15px;
 }
 .square h3 {
-  font-size: 17px;
+  font-size: 0.9rem;
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -176,8 +175,7 @@ header {
 
 /* Logements */
 .logements {
-  margin: 0 9em;
-  width: 60em;
+  margin: 0 2em;
 }
 .logements h2 {
   color: #FF6060;
@@ -203,13 +201,14 @@ header {
 
 .conteneur-box {
   display: flex;
+  gap: 5px;
 }
 
 .box-info {
   background-color: #FF6060;
   color: white;
   border-radius: 15px;
-  margin: 5px;
+  margin-bottom: 20px;
   padding: 10px;
 }
 
@@ -226,7 +225,6 @@ header {
 .description-equipements .box-content {
   align-items: center;
   width: 25em;
-  max-width: 100%;
   margin: 0;
 }
 
@@ -235,21 +233,21 @@ header {
   position: relative;
   border-radius: 15px;
   height: 25em;
-  width: 60em;
+  width: 100%;
   object-fit: cover;
 }
 
 .slide-back {
-  position: relative;
+  position: absolute;
   top: 26rem;
   left: 3rem;
   z-index: 1;
 }
 
 .slide-forward {
-  position: relative;
-  top: -19.85rem;
-  right: -82rem;
+  position: absolute;
+  top: 26rem;
+  right: 3rem;
   z-index: 1;
 }
 

@@ -3,8 +3,7 @@
 /* Logements */
 
 .logements {
-	margin: 0 9em;
-	width: 60em;
+	margin: 0 2em;
 	h2 {
 		color: $color_3;
 	}
@@ -27,12 +26,13 @@
 }
 .conteneur-box {
 	display: flex;
+	gap: 5px;
 }
 .box-info {
 	background-color: $background-color_1;
 	color: $color_1;
 	border-radius: 15px;
-	margin: 5px;
+	margin-bottom: 20px;
 	padding: 10px;
 }
 .rating-conteneur {
@@ -46,7 +46,6 @@
 	.box-content {
 		align-items: center;
 		width: 25em;
-		max-width: 100%;
 		margin: 0;
 	}
 }
@@ -57,19 +56,19 @@
 	position: relative;
 	border-radius: 15px;
 	height: 25em;
-	width: 60em;
+	width: 100%;
 	object-fit: cover;
 }
 .slide-back {
-	position: relative;
+	position: absolute;
 	top: 26rem;
 	left: 3rem;
 	z-index: 1;
   }
   .slide-forward {
-	position: relative;
-	top: -19.85rem; 
-	right: -82rem; 
+	position: absolute;
+	top: 26rem; 
+	right: 3rem; 
 	z-index: 1;
   }
 
