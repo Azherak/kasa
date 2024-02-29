@@ -40,6 +40,12 @@ body {
   background-color: white;
   color: black;
   margin: 20px 180px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s linear;
+}
+.explanation.explanation.open {
+  max-height: 1000px;
 }
 
 /* Error */

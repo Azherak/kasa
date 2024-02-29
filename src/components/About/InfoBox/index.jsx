@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "../../../style/index.css";
-
-// L'image du chevron
 import Chevron from "../../../assets/Vector.png";
 
 function InfoBox({ word, explanation }) {
@@ -21,7 +19,7 @@ function InfoBox({ word, explanation }) {
           }}
         />
       </div>
-      {isOpen && <div className="explanation">{explanation}</div>}
+      <div className={`explanation ${isOpen ? 'open' : ''}`}>{explanation}</div>
     </div>
   );
 }
