@@ -64,12 +64,14 @@
 	top: 26rem;
 	left: 3rem;
 	z-index: 1;
+	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
   }
   .slide-forward {
 	position: absolute;
 	top: 26rem; 
 	right: 3rem; 
 	z-index: 1;
+	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
   }
 
 /* Rating */
