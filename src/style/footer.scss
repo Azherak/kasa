@@ -11,11 +11,13 @@ footer {
 	align-items: center;
 	padding: 2rem;
 	margin-top: 2em;
+
 	p {
 		margin: 0.5em 1.5em;
 	}
 	@media ( max-width: 375px) {
-		padding: 1rem 7rem;
+		padding: 3.5rem 7rem;
+		flex-shrink: 0;
 	}
 
 }
