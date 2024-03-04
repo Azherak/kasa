@@ -7,6 +7,9 @@
 	h2 {
 		color: $color_3;
 	}
+	@media (max-width: 375px) {
+		margin: 0 1em;
+	}
 }
 .hotes {
 	p {
@@ -28,6 +31,7 @@
 	display: flex;
 	gap: 5px;
 }
+
 .box-info {
 	background-color: $background-color_1;
 	color: $color_1;
@@ -43,10 +47,17 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 2em;
+	@media (max-width: 375px) {
+		flex-direction: column;	
+		gap: 0.5em;
+	}
 	.box-content {
 		align-items: center;
 		width: 25em;
 		margin: 0;
+		@media (max-width: 375px) {
+			width: 17em;
+		}
 	}
 }
 
@@ -58,6 +69,9 @@
 	height: 25em;
 	width: 100%;
 	object-fit: cover;
+	@media (max-width: 375px) {
+		height: 17.7em;
+	}
 }
 .slide-back {
 	position: absolute;
@@ -65,6 +79,11 @@
 	left: 3rem;
 	z-index: 1;
 	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
+	@media (max-width: 375px) {
+		top: 11rem;
+		left: 1rem;
+		width: 2rem;
+	}
   }
   .slide-forward {
 	position: absolute;
@@ -72,8 +91,12 @@
 	right: 3rem; 
 	z-index: 1;
 	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
+	@media (max-width: 375px) {
+		top: 11rem;
+		right: 1rem;
+		width: 2rem;
+	}
   }
-
 /* Rating */
 
 .star {

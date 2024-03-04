@@ -19,7 +19,7 @@ function InfoBox({ word, explanation }) {
           }}
         />
       </div>
-      <div className={`explanation ${isOpen ? 'open' : ''}`}>{Array.isArray(explanation) ? <ul>{explanation.map(item => <li>{item} </li>)} </ul>: explanation}</div>
+      <div className={`explanation ${isOpen ? 'open' : ''}`}>{Array.isArray(explanation) ? <ul>{explanation.map(item => <li>{item}</li>)} </ul>: explanation}</div>
     </div>
   );
 }

@@ -28,11 +28,7 @@
 	width: 24px;
 	height: 16px;
 }
-.box {
-	@media (max-width:375px) {
-		height: 70px;
-	}
-}
+
 .box-content {
 	display: flex;
 	justify-content: space-between;
@@ -59,6 +55,8 @@
 	transition: max-height 0.5s cubic-bezier(0.5,0.3,0.3,0.5);
 	&.explanation.open {
 		max-height: 1000px;
-		
+		@media (max-width: 375px) {
+			margin: 0;
+		}
 	  }
 }

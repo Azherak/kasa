@@ -13,9 +13,7 @@ function Logements(){
     } 
     return(
         <div className='logements'>
-            
                 <ImageCarousel pictures={logement.pictures}/> 
-            
             <div className='titre-hotes'>
                 <div>
                     <h2>{logement.title}</h2>
