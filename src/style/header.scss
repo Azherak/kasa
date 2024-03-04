@@ -1,47 +1,48 @@
 @import 'variable.scss';
 
 /* Header */
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-nav img {
-	width: 9em;
-	height: 4em;
-	@media (max-width: 375px) {
-		height: 3.5em;
+header {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
-}
-
-ul {
-	padding: 0;
-	list-style: none;
-	display: flex;
-	gap: 4rem;
-	@media (max-width: 375px) {
-		gap: 1rem;
+	
+	nav img {
+		height: 4em;
+		@media (max-width: 375px) {
+			height: 3.5em;
+		}
 	}
-}
-
-a {
-	text-decoration: none;
-}
-a.active {
-	text-decoration: underline;
-}
-.liens-header {
-	color: $color_2;
-	&:focus {
-		color: $color_2;
+	
+	ul {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		gap: 4rem;
+		@media (max-width: 375px) {
+			gap: 1rem;
+		}
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	a.active {
 		text-decoration: underline;
 	}
-	@media (max-width: 375px) {
-		font-size: 1.3em;
+	.liens-header {
+		color: $color_2;
+		&:focus {
+			color: $color_2;
+			text-decoration: underline;
+		}
+		@media (max-width: 375px) {
+			font-size: 1.3em;
+		}
 	}
 }
+
 header {
 	padding: 1.5rem 3rem;
 	@media (max-width: 375px) {
