@@ -13,31 +13,32 @@ function Logements(){
     } 
     return(
         <div className='logements'>
-                <ImageCarousel pictures={logement.pictures}/> 
+            <ImageCarousel pictures={logement.pictures}/>
             <div className='titre-hotes'>
-                <div>
-                    <h2>{logement.title}</h2>
-                    <p>{logement.location}</p>
-                </div>
-                <div className='hotes'>
-                    <p>{logement.host.name}</p>
-                    <img src={logement.host.picture} alt="visage de l'hôte"></img>
-                </div>
-            </div>
-            <div className='rating-conteneur'>
+                <div className='titre-tags'>
+                    <div>
+                        <h2>{logement.title}</h2>
+                        <p>{logement.location}</p>
+                    </div>
                     <div className='conteneur-box'>
                         {logement.tags.map((tag, index) => (
                             <div key={index} className='box-info'>{tag}</div>
                         ))}
                     </div>
-                <Rating rating={logement.rating}/>
+                </div>
+                <div className='hotes-rating'>
+                    <div className='hotes'>
+                        <p>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt="visage de l'hôte"></img>
+                    </div>
+                        <Rating rating={logement.rating}/>
+                </div>
             </div>
             <div className='description-equipements'>
                 <InfoBox word="Description" explanation={logement.description}/>
                 <InfoBox word="Equipements" explanation={logement.equipments}/>
             </div>
         </div>
-
     )
 }
 

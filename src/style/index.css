@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #root {
   display: flex;
   flex-direction: column;
@@ -80,6 +81,7 @@ body {
 @media (max-width: 375px) {
   .explanation.explanation.open {
     margin: 0;
+    transition: max-height 8s linear;
   }
 }
 
@@ -273,68 +275,11 @@ header {
 }
 .logements h2 {
   color: #FF6060;
+  margin: 0;
 }
 @media (max-width: 375px) {
   .logements {
     margin: 0 1em;
-  }
-}
-
-.hotes {
-  display: flex;
-}
-.hotes p {
-  color: #FF6060;
-}
-
-.titre-hotes {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2em;
-}
-.titre-hotes img {
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
-}
-
-.conteneur-box {
-  display: flex;
-  gap: 5px;
-}
-
-.box-info {
-  background-color: #FF6060;
-  color: white;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.rating-conteneur {
-  display: flex;
-  justify-content: space-between;
-}
-
-.description-equipements {
-  display: flex;
-  justify-content: space-between;
-  gap: 2em;
-}
-@media (max-width: 375px) {
-  .description-equipements {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-}
-.description-equipements .box-content {
-  align-items: center;
-  width: 25em;
-  margin: 0;
-}
-@media (max-width: 375px) {
-  .description-equipements .box-content {
-    width: 17em;
   }
 }
 
@@ -382,9 +327,104 @@ header {
   }
 }
 
+/* titres et hôtes */
+.hotes {
+  gap: 1em;
+  margin-bottom: 2em;
+  align-items: center;
+  display: flex;
+}
+.hotes p {
+  color: #FF6060;
+  margin: 0;
+}
+.hotes img {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+@media (max-width: 375px) {
+  .hotes {
+    margin-bottom: 0;
+  }
+}
+
+.titre-hotes {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 0;
+}
+@media (max-width: 375px) {
+  .titre-hotes {
+    flex-direction: column;
+    margin: 0.75em 0;
+  }
+}
+
+/* box données logement */
+.conteneur-box {
+  display: flex;
+  gap: 5px;
+}
+
+.box-info {
+  background-color: #FF6060;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+@media (max-width: 375px) {
+  .box-info {
+    border-radius: 8px;
+  }
+}
+
 /* Rating */
+@media (max-width: 375px) {
+  .hotes-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+  }
+}
+
+#stars-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .star {
-  width: 1.5em;
+  width: 1em;
+}
+@media (max-width: 375px) {
+  .star {
+    width: 1.5em;
+  }
+}
+
+/* infobox: description et equipements */
+.description-equipements {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+@media (max-width: 375px) {
+  .description-equipements {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.description-equipements .box-content {
+  align-items: center;
+  width: 25em;
+  margin: 0;
+}
+@media (max-width: 375px) {
+  .description-equipements .box-content {
+    width: 17em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

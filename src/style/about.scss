@@ -57,6 +57,7 @@
 		max-height: 1000px;
 		@media (max-width: 375px) {
 			margin: 0;
+			transition: max-height 8s linear;
 		}
 	  }
 }
