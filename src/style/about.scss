@@ -52,7 +52,6 @@
 	margin: 10px;
 	overflow: hidden;
 	max-height: 0;
-
 	& ul{
 		list-style-type: none;
 		padding: 0;
@@ -64,7 +63,9 @@
 		margin: 1rem 12rem;
 		@media (max-width: 375px) {
 			transition: max-height 0.5s linear;
-			margin: 1rem 3rem;
+			margin: 0 2rem;
+			padding: 1rem;
+			background-color: $background-color_4;
 		}
 	};
 }

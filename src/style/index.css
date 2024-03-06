@@ -87,7 +87,9 @@ body {
 @media (max-width: 375px) {
   .explanation.explanation.open {
     transition: max-height 0.5s linear;
-    margin: 1rem 3rem;
+    margin: 0 2rem;
+    padding: 1rem;
+    background-color: #F6F6F6;
   }
 }
 
