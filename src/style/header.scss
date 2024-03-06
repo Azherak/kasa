@@ -2,6 +2,7 @@
 
 /* Header */
 header {
+	padding: 1.5rem 3rem;
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -41,11 +42,7 @@ header {
 			font-size: 1.3em;
 		}
 	}
-}
-
-header {
-	padding: 1.5rem 3rem;
 	@media (max-width: 375px) {
-		padding: 0.7rem 1.5rem;
+		padding: 0.7rem 1rem;
 	}
 }

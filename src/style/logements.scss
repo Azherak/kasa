@@ -131,12 +131,16 @@
 		flex-direction: column;	
 		gap: 0;
 	}
+	@media (max-width:1439px) {
+		flex-direction: column;	
+		gap: 0;
+	}
 	.box-content {
 		align-items: center;
 		width: 25em;
 		margin: 0;
 		@media (max-width: 375px) {
-			width: 17em;
+			width: 16.2em;
 		}
 	}
 }
