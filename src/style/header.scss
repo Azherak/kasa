@@ -10,7 +10,7 @@ header {
 	}
 	
 	nav img {
-		height: 4em;
+		height: 5.75vw;
 		@media (max-width: 375px) {
 			height: 3.5em;
 		}
@@ -20,7 +20,7 @@ header {
 		padding: 0;
 		list-style: none;
 		display: flex;
-		gap: 4rem;
+		gap: 4vw;
 		@media (max-width: 375px) {
 			gap: 1rem;
 		}
@@ -34,6 +34,7 @@ header {
 	}
 	.liens-header {
 		color: $color_2;
+		font-size: 2vw;
 		&:focus {
 			color: $color_2;
 			text-decoration: underline;

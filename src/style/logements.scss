@@ -124,20 +124,15 @@
 /* infobox: description et equipements */
 
 .description-equipements {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	gap: 2em;
 	@media (max-width: 375px) {
-		flex-direction: column;	
-		gap: 0;
-	}
-	@media (max-width:1439px) {
-		flex-direction: column;	
+		grid-template-columns: 1fr;	
 		gap: 0;
 	}
 	.box-content {
 		align-items: center;
-		width: 25em;
 		margin: 0;
 		@media (max-width: 375px) {
 			width: 16.2em;
@@ -145,7 +140,6 @@
 	}
 	.explanation.open {
 		margin: 0;
-		width: 25em;
 		@media (max-width:375px) {
 			margin: 0 0 1rem;
     		width: 18.6rem;

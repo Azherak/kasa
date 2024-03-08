@@ -35,7 +35,7 @@
 	flex-direction: row;
 	background-color: $background-color_1;
 	color: $color_1;
-	margin: 0 10rem;
+	margin: 0 11vw;
 	padding: 1rem;
 	border-radius: 10px;
 	font-size: 1.5rem;
@@ -61,7 +61,6 @@
 		transition: max-height 0.8s cubic-bezier(0.5,0.5,0.3,0.3);
 		max-height: 1000px;
 		margin: 0 10rem 1rem;
-		width: 68.5rem;
 		padding: 1rem;
 		border-radius: 15px;
 
@@ -69,7 +68,6 @@
 			transition: max-height 0.5s linear;
 			margin: 0 1.5rem 1rem;
 			padding: 1rem;
-			width: 18.5rem;
 			background-color: $background-color_4;
 		}
 	};
