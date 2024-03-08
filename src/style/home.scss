@@ -28,9 +28,10 @@
 		align-items: center;
 		justify-content: center;
 		align-content: center;
+		@media (max-width:768px) {
+			font-size: 2em;
+		}
 		@media (max-width: 375px) {
-			top: 25%;
-			left: 5%;
 			font-size: 1.6em;
 			margin: 0 4.5em 0 0;
 		}
@@ -51,8 +52,8 @@
 	margin: 1.2rem 3rem;
 	background-color: $background-color_4;
 	border-radius: 15px;
-	@media (max-width:425px) {
-		
+	@media (max-width:768px) {
+		grid-template-columns: 1fr 1fr;
 	}
 	@media (max-width: 375px) {
 		grid-template-columns: 1fr;
