@@ -82,15 +82,24 @@ body {
 .explanation.explanation.open {
   transition: max-height 0.8s cubic-bezier(0.5, 0.5, 0.3, 0.3);
   max-height: 1000px;
-  margin: 0 11rem 1rem;
+  margin: 0 10rem 1rem;
+  width: 68.5rem;
   padding: 1rem;
   border-radius: 15px;
+  /*
+
+  */
 }
 @media (max-width: 375px) {
   .explanation.explanation.open {
     transition: max-height 0.5s linear;
-    margin: 0 2rem;
+    margin: 0 1.5rem 1rem;
     padding: 1rem;
+    width: 18.5rem;
+    /*
+
+
+    */
     background-color: #F6F6F6;
   }
 }
@@ -465,8 +474,14 @@ header .liens-header:focus {
   }
 }
 .description-equipements .explanation.open {
-  margin: 0rem 1rem 0 1rem;
-  width: 23em;
+  margin: 0;
+  width: 25em;
+}
+@media (max-width: 375px) {
+  .description-equipements .explanation.open {
+    margin: 0 0 1rem;
+    width: 18.6rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

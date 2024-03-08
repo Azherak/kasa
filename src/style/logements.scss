@@ -144,8 +144,12 @@
 		}	
 	}
 	.explanation.open {
-		margin: 0rem 1rem 0 1rem;
-		width: 23em;
+		margin: 0;
+		width: 25em;
+		@media (max-width:375px) {
+			margin: 0 0 1rem;
+    		width: 18.6rem;
+		}
 	}
 }
 
