@@ -11,8 +11,11 @@ header {
 	
 	nav img {
 		height: 5.75vw;
+		@media (max-width:768px) {
+			height: 10vw;
+		}
 		@media (max-width: 375px) {
-			height: 3.5em;
+			height: 15vw;
 		}
 	}
 	
@@ -39,9 +42,12 @@ header {
 			color: $color_2;
 			text-decoration: underline;
 		}
-		@media (max-width: 375px) {
-			font-size: 1.3em;
+		@media (max-width:768px) {
+			font-size: 3vw;
 		}
+		@media (max-width: 375px) {
+			font-size: 4vw;
+		}	
 	}
 	@media (max-width: 375px) {
 		padding: 0.7rem 1rem;
