@@ -86,9 +86,6 @@ body {
   width: 68.5rem;
   padding: 1rem;
   border-radius: 15px;
-  /*
-
-  */
 }
 @media (max-width: 375px) {
   .explanation.explanation.open {
@@ -96,10 +93,6 @@ body {
     margin: 0 1.5rem 1rem;
     padding: 1rem;
     width: 18.5rem;
-    /*
-
-
-    */
     background-color: #F6F6F6;
   }
 }
@@ -225,6 +218,7 @@ header .liens-header:focus {
   overflow: hidden;
   margin: 1rem 3rem;
   position: relative;
+  filter: drop-shadow(0 5px 0.9px rgba(0, 0, 0, 0.2));
 }
 .Home-titre img {
   width: 100%;
