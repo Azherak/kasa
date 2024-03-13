@@ -3,6 +3,7 @@
 /* Footer */
 
 footer {
+	width: 100%;
 	background-color: $background-color_3;
 	color: $color_1;
 	display: flex;
@@ -15,7 +16,6 @@ footer {
 		margin: 0.5em 1.5em;
 	}
 	@media ( max-width: 375px) {
-		padding: 3.5rem 7rem;
 		flex-shrink: 0;
 	}
 }

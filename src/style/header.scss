@@ -2,7 +2,11 @@
 
 /* Header */
 header {
-	padding: 1.5rem 3rem;
+	width: 100%;
+    max-width: 1240px;
+	@media (max-width:1440px) {
+		width: 90%;			
+	}
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -10,13 +14,7 @@ header {
 	}
 	
 	nav img {
-		height: 5.75vw;
-		@media (max-width:768px) {
-			height: 10vw;
-		}
-		@media (max-width: 375px) {
-			height: 15vw;
-		}
+		height: 68px;
 	}
 	
 	ul {
