@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "../../../style/index.css";
-import Chevron from "../../../assets/Vector.png";
+import Chevron from "../../assets/Vector.png";
 
 function InfoBox({ word, explanation }) {
   const [isOpen, setIsOpen] = useState(false);

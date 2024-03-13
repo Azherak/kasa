@@ -1,8 +1,6 @@
 import React from "react";
-import star from "../../../assets/star.png";
-import starRed from "../../../assets/starRed.png";
-import "../../../data.json";
-import "../../../style/index.css";
+import star from "../../assets/star.png";
+import starRed from "../../assets/starRed.png";
 
 function Rating({ rating }){
     let stars = [];

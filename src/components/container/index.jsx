@@ -1,7 +1,7 @@
 import React from "react";
-import data from "../../../data.json";
-import Square from "../Square";
-import "../../../style/index.css";
+import data from "../../data.json";
+import Square from "../Square/index.jsx";
+
 
 function Conteneur(){
     return(

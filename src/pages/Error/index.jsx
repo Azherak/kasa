@@ -1,7 +1,6 @@
 import React from "react";
 import img from "../../assets/404.png";
 import { Link } from "react-router-dom";
-import "../../style/index.css";
 
 function Error(){
     return(

@@ -1,6 +1,4 @@
 import React from "react";
-import "../../../data.json";
-import "../../../style/index.css";
 import { Link } from "react-router-dom";
 
 const Square = ({ item }) => {

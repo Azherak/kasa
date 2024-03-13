@@ -1,15 +1,15 @@
 import { useParams } from 'react-router-dom';
-import InfoBox from "../About/InfoBox/index";
+import InfoBox from "../../components/InfoBox/index";
 import data from "../../data.json"; 
-import ImageCarousel from "./Carousel/index.jsx";
-import "../../style/index.css";
-import Rating from './Rating/index.jsx';
+import ImageCarousel from "../../components/Carousel/index.jsx";
+import Rating from '../../components/Rating/index.jsx';
+import Error from '../Error/index.jsx';
 
 function Logements(){
     const {id} = useParams();
     const logement = data.find(item => item.id === id);
     if (!logement) {
-        return <div>Logement non trouvé</div>; 
+        return <Error/>; 
     } 
     return(
         <div className='logements'>

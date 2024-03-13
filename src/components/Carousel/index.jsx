@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import "../../../data.json";
-import iconBack from "../../../assets/arrow_back.png";
-import iconForward from "../../../assets/arrow_forward.png";
-import "../../../style/index.css";
+import iconBack from "../../assets/arrow_back.png";
+import iconForward from "../../assets/arrow_forward.png";
 
 function ImageCarousel({ pictures }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

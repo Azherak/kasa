@@ -1,7 +1,6 @@
 import React from "react";
-import "../../style/index.css";
 import img from "../../assets/HomeFond.png";
-import Conteneur from "./container";
+import Conteneur from "../../components/container/index.jsx";
 
 function Home(){
     return(
