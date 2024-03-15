@@ -1,11 +1,12 @@
 @import 'variable.scss';
+@import 'mixin.scss';
 
 /* Header */
 header {
 	width: 100%;
     max-width: 1240px;
 	margin: 20px 0 10px;
-	@media (max-width:1440px) {
+	@include respond(large) {
 		width: 90%;			
 	}
 	nav {
@@ -16,7 +17,7 @@ header {
 	
 	nav img {
 		height: 68px;
-		@media (max-width: 768px) {
+		@include respond(medium) {
 			height: 46.88px;
 		}
 	}
@@ -26,7 +27,7 @@ header {
 		list-style: none;
 		display: flex;
 		gap: 4vw;
-		@media (max-width: 375px) {
+		@include respond(small) {
 			gap: 1rem;
 		}
 	}
@@ -44,14 +45,14 @@ header {
 			color: $color_2;
 			text-decoration: underline;
 		}
-		@media (max-width:768px) {
+		@include respond(medium) {
 			font-size: 1rem;
 		}
-		@media (max-width: 375px) {
+		@include respond(small) {
 			font-size: 14px;
 		}	
 	}
-	@media (max-width: 375px) {
+	@include respond(small) {
 		padding: 0.7rem 1rem;
 	}
 }

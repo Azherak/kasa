@@ -26,6 +26,11 @@ body {
     width: 90%;
   }
 }
+@media (max-width: 375px) {
+  .about {
+    width: 100%;
+  }
+}
 
 .about-visuel {
   height: 14rem;
@@ -48,6 +53,15 @@ body {
 }
 
 /* infoBox */
+.about-regles {
+  padding: 0 6rem;
+}
+@media (max-width: 768px) {
+  .about-regles {
+    padding: 0;
+  }
+}
+
 .chevron {
   width: 24px;
   height: 16px;
@@ -59,13 +73,12 @@ body {
   flex-direction: row;
   background-color: #FF6060;
   color: white;
-  margin: 0 8vw;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1.5rem;
   align-items: center;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .box-content {
     margin: 0 1.5rem;
     padding: 0.5rem 0.6rem;
@@ -76,7 +89,7 @@ body {
 .explanation {
   background-color: #F6F6F6;
   color: black;
-  margin: 1rem;
+  margin: 0 0 1rem;
   overflow: hidden;
   max-height: 0;
 }
@@ -88,11 +101,10 @@ body {
 .explanation.explanation.open {
   transition: max-height 0.8s cubic-bezier(0.5, 0.5, 0.3, 0.3);
   max-height: 1000px;
-  margin: 0 11vw 1vw;
   padding: 1rem;
   border-radius: 15px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .explanation.explanation.open {
     transition: max-height 0.5s linear;
     margin: 0 1.5rem 1rem;
@@ -148,19 +160,27 @@ footer {
   width: 100%;
   background-color: black;
   color: white;
+  margin-top: 1.6em;
+}
+@media (max-width: 768px) {
+  footer {
+    min-height: 40vh;
+  }
+}
+
+.footer {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
-  margin-top: 2em;
 }
-footer p {
+.footer p {
   margin: 0.5em 1.5em;
 }
-@media (max-width: 375px) {
-  footer {
-    flex-shrink: 0;
+@media (max-width: 768px) {
+  .footer {
+    margin-top: auto;
   }
 }
 
@@ -483,8 +503,13 @@ header .liens-header:focus {
 }
 
 /* Rating */
+.hotes-rating {
+  max-width: 196px;
+  width: 100%;
+}
 @media (max-width: 768px) {
   .hotes-rating {
+    max-width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;

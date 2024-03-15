@@ -1,10 +1,11 @@
 @import 'variable.scss';
+@import 'mixin.scss';
 
 /* Home */
 .Home{
 	width: 100%;
     max-width: 1240px;
-	@media (max-width:1440px) {
+	@include respond(large) {
 		width: 90%;			
 	}
 }
@@ -35,15 +36,15 @@
 		justify-content: center;
 		align-content: center;
 		font-size: 48px;
-		@media (max-width:768px) {
+		@include respond(medium) {
 			font-size: 2em;
 		}
-		@media (max-width: 375px) {
+		@include respond(small) {
 			font-size: 1.6em;
 			margin: 0 4.5em 0 0;
 		}
 	}
-	@media (max-width: 375px) {
+	@include respond(small) {
 		height: 6.95rem;
 	}
 }
@@ -57,7 +58,7 @@
 	padding: 2rem;
 	background-color: $background-color_4;
 	border-radius: 15px;
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		grid-template-columns: 1fr;
 		padding: 0;
 	}
@@ -94,7 +95,7 @@
 		text-align: left;
 		color: $color_1;
 		text-decoration: none;
-		@media (max-width:768px) {
+		@include respond(medium) {
 			font-size: 1.5rem;
 		}
 	}

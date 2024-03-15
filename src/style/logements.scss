@@ -1,21 +1,22 @@
 @import 'variable.scss';
+@import 'mixin.scss';
 
 /* Logements */
 
 .logements {
 	width: 100%;
     max-width: 1240px;
-	@media (max-width:1440px) {
+	@include respond(large) {
 		width: 90%;			
 	}
 	h2 {
 		color: $color_3;
 		margin: 0;
 	}
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		margin: 0 1.5em;
 	}
-	@media (max-width: 425px) {
+	@include respond(smaller) {
 		margin: 0 1em;
 	}
 }
@@ -32,10 +33,10 @@
 	border-radius: 15px;
 	height: 25em;
 	object-fit: cover;
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		height: 19em;
 	}
-	@media (max-width: 425px) {
+	@include respond(smaller) {
 		height: 17.7em;
 	}
 }
@@ -45,10 +46,10 @@
 	z-index: 1;
 	width: 5rem;
 	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
-	@media (max-width:768px) {
+	@include respond(medium) {
 		width: 3rem;
 	}
-	@media (max-width: 425px) {
+	@include respond(smaller) {
 		width: 2rem;
 	}
   }
@@ -59,10 +60,10 @@
 	z-index: 1;
 	width: 5rem;
 	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
-	@media (max-width:768px) {
+	@include respond(medium) {
 		width: 3rem;
 	}
-	@media (max-width: 425px) {
+	@include respond(smaller) {
 		width: 2rem;
 	}
   }
@@ -88,7 +89,7 @@
 		height: 3em;
 	}
 	display: flex;
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		margin-bottom: 0;
 	}
 }
@@ -96,7 +97,7 @@
 	display: flex;
 	justify-content: space-between;
 	margin: 1.5em 0;
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		flex-direction: column;	
 		margin: 0.75em 0;	
 	}
@@ -114,7 +115,7 @@
 	color: $color_1;
 	border-radius: 15px;
 	padding: 8px;
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		border-radius: 8px;		
 	}
 }
@@ -122,7 +123,10 @@
 /* Rating */
 
 .hotes-rating {
-	@media (max-width: 768px) {
+	max-width: 196px;
+    width: 100%;
+	@include respond(medium) {
+		max-width: 100%;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -138,7 +142,7 @@
 
 .star {
 	width: 1em;
-	@media (max-width: 425px) {
+	@include respond(smaller) {
 		width: 1.5em;
 	}
 }
@@ -149,7 +153,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 2em;
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		grid-template-columns: 1fr;	
 		gap: 0;
 	}
@@ -162,7 +166,7 @@
 	}
 	.explanation.open {
 		margin: 0;
-		@media (max-width:768px) {
+		@include respond(medium) {
 			margin: 0 0 1rem;
 		}
 	}

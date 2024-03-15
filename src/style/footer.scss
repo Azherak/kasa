@@ -1,21 +1,28 @@
 @import 'variable.scss';
 
+
 /* Footer */
 
 footer {
 	width: 100%;
 	background-color: $background-color_3;
 	color: $color_1;
+	margin-top: 1.6em;	
+	@media (max-width: 768px) {
+		min-height: 40vh;
+	}
+}
+
+.footer {
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	padding: 2rem;
-	margin-top: 2em;
 	p {
 		margin: 0.5em 1.5em;
-	}
-	@media ( max-width: 375px) {
-		flex-shrink: 0;
+	};
+	@media (max-width: 768px) {
+		margin-top: auto;
 	}
 }

@@ -8,7 +8,7 @@ function About(){
             <div className="about-visuel">
                 <img src={img} alt="montagnes et lac"></img>
             </div>
-            <div>
+            <div className="about-regles">
                 <InfoBox word="Fiabilité" explanation="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
                 <InfoBox word="Respect" explanation="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de la plateforme." />
                 <InfoBox word="Service" explanation="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de la plateforme." />
