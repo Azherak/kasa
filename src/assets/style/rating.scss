@@ -1,0 +1,27 @@
+@import 'mixin.scss';
+/* Rating */
+
+.hotes-rating {
+	max-width: 196px;
+    width: 100%;
+	@include respond(medium) {
+		max-width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		margin: 1em 0;
+	}
+}
+
+#stars-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.star {
+	width: 1em;
+	@include respond(smaller) {
+		width: 1.5em;
+	}
+}

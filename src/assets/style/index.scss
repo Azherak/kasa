@@ -1,6 +1,5 @@
 @import 'variable.scss';
 @import 'mixin.scss';
-
 #root {
 	display: flex;
 	flex-direction: column;
@@ -15,10 +14,14 @@ body {
 		font-size: 0.9rem;
 	}
 }
-
+@import 'infobox.scss';
 @import 'about.scss';
 @import 'error.scss';
 @import 'footer.scss';
 @import 'header.scss';
 @import 'home.scss';
+@import 'container.scss';
+@import 'square.scss';
 @import 'logements.scss';
+@import 'carousel.scss';
+@import 'rating.scss';

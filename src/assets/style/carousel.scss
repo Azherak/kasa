@@ -1,0 +1,62 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+/* Carousel */
+.carousel {
+	position: relative;
+	margin: 2rem 0;
+	.image-counter {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		color: $color_1; 
+		filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
+		font-size: 1em; 
+	}
+}
+.carousel-img {
+	width: 100%;
+    max-width: 1240px;
+	position: relative;
+	border-radius: 15px;
+	height: 25em;
+	object-fit: cover;
+	@include respond(medium) {
+		height: 19em;
+	}
+	@include respond(smaller) {
+		height: 17.7em;
+	}
+}
+.slide-back {
+	position: absolute;
+	top: 45%;
+	z-index: 1;
+	width: 5rem;
+	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
+	@include respond(medium) {
+		width: 3rem;
+	}
+	@include respond(smaller) {
+		width: 2rem;
+	}
+  }
+  .slide-forward {
+	position: absolute;
+	top: 45%; 
+	right: 1rem; 
+	z-index: 1;
+	width: 5rem;
+	filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
+	@include respond(medium) {
+		width: 3rem;
+	}
+	@include respond(smaller) {
+		width: 2rem;
+	}
+  }
+
+.slide {
+	&:hover {
+		cursor: pointer;
+	}
+}
