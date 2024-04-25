@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import InfoBox from "../../components/InfoBox/index";
-import data from "../../data.json"; 
+import data from "../../assets/data.json"; 
 import ImageCarousel from "../../components/Carousel/index.jsx";
 import Rating from '../../components/Rating/index.jsx';
 import Error from '../Error/index.jsx';
