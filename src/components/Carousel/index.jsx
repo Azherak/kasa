@@ -20,7 +20,9 @@ function ImageCarousel({ pictures }) {
       {pictures.length > 1 && <img className="slide slide-back" src={iconBack}  onClick={prevSlide} alt='icone retour slide'/>}
       {pictures.length > 1 && <img className="slide slide-forward" src={iconForward} onClick={nextSlide} alt='icone slide suivant'/>}
       <img className='carousel-img' src={pictures[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
+      <div className='image-counter'>{currentImageIndex + 1}/{pictures.length}</div>
     </div>
+    
   );
 }
 

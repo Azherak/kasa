@@ -389,6 +389,14 @@ header .liens-header:focus {
   position: relative;
   margin: 2rem 0;
 }
+.carousel .image-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: white;
+  filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
+  font-size: 1em;
+}
 
 .carousel-img {
   width: 100%;

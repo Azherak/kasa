@@ -25,6 +25,14 @@
 .carousel {
 	position: relative;
 	margin: 2rem 0;
+	.image-counter {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		color: $color_1; 
+		filter: drop-shadow(rgb(117, 117, 117) 0px 3px 3px);
+		font-size: 1em; 
+	}
 }
 .carousel-img {
 	width: 100%;
