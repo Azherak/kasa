@@ -11,6 +11,11 @@
 .chevron {
 	width: 24px;
 	height: 16px;
+	transition: transform 0.3s ease;
+
+	&-open {
+		transform: rotate(-180deg);
+	}
 }
 
 .box-content {

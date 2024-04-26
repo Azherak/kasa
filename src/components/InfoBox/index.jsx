@@ -11,11 +11,7 @@ function InfoBox({ word, explanation }) {
         <img
           src={Chevron}
           alt="Chevron"
-          className="chevron"
-          style={{
-            transform: isOpen ? "rotate(-180deg)" : "none",
-            transition: "transform 0.3s ease",
-          }}
+          className={`chevron ${isOpen ? "chevron-open" : ""}`}
         />
       </div>
       <div className={`explanation ${isOpen ? 'open' : ''}`}>
